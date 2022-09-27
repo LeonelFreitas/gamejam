@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    height:90px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.meio{
+    padding-top: 50px;
+    padding-bottom:120px;
+}
+.tituloLançamentos{
+    font-family: 'Anek Latin', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom:80px;
+    padding-left: 680px;
+}
+
+.galeria-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 5vw;
+
+}
+
+.galeria-items{
+    width: 400px;
+    height: 400px;
+    border: 7px solid white;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.galeria-items1{
+    width: 600px;
+    height: 350px;
+    border: 7px solid white;
+    box-shadow: 10px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+
+
+.galeria-items img{
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-items1 img{
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-items:hover{
+    transform: scale(1.1);
+}
+.galeria-items1:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    align-items:center;
+    height:150px;
+    display:flex;
+    color: #000;
+    background-color: rgba(170, 166, 166, 0.258) ;
+}
+
+
+@media only screen and (max-width:768px){
+    header{
+        height:35px;
+        margin: 1px;
+        display:flex;
+        justify-content:center;
+        align-items:center; 
+    }
+
+
+    .galeria-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 3vw;
+        padding: 0 3vw;
+    }
+
+    .galeria-items{
+        width: 350px;
+        height: 350px;
+        border: 6px solid white;
+        box-shadow: 5px 5px 5px #0006;
+        flex-grow: 1;
+        transition:transform .1s linear;
+    }
+
+    .galeria-items img{
+        overflow:hidden;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* .galeria-items:hover{
+        -moz-transform:scale(1.1);
+        -webkit- transform:scale: (1.1);
+        transform:scale(1.1);
+    } */
+}

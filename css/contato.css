@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+h1{
+    text-align: center;
+    text-align: center;
+    
+}
+h2{
+    font-size: 35px;
+    font-family: 'Anek Latin', sans-serif;
+    margin-bottom: 50px;
+}
+
+p{
+    margin-bottom: 20px;
+    font-family: 'Anek Latin', sans-serif;
+    font-size: 17px;
+}
+header{
+    height: 94vh;
+}
+
+.conteudoContato{
+    display: table;
+}
+.esquerda{
+    display: table-cell;
+    float: left;
+    width: 690px;
+    margin-top: 300px;
+    margin-left: 100px;
+    padding-left: 50px;
+
+}
+.direita{
+    display: table-cell;
+    float: left;
+    width: 700px;
+    margin-top: 210px;
+    margin-left: 80px;
+    margin-right: -140px;
+    padding-left:200px;
+}
+.img-leonel{
+    border-radius:50%;
+}
+
+
+a{
+    text-decoration:none;
+    color: white;
+}
+a:link {
+    color: white;
+ }
+
+button{
+    outline:none;
+    border:none; 
+}
+button:hover{
+   background-color:rgb(239, 110, 110);
+   border:1px solid white
+}
+footer{
+    height: 5vh;
+}
+
