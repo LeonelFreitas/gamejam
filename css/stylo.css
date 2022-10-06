@@ -23,18 +23,15 @@ a{
     font-family: 'Anek Latin', sans-serif;
 }
 
-.linkIndexPobre{
-    text-decoration: none;
-    color: #e9e9e9;
-    margin-left: 70px;
-}
-.linkIndexFlix{
+.game{
     text-decoration: none;
     color: #62ad0b;
+    margin-left: 70px;
 }
-.linkIndexFlix1{
+.branco{
     text-decoration: none;
-    color: rgb(229, 238, 224);
+    color: var(--color-white);
+    font-size: 30px;
 }
 
 .menu_bar{
@@ -45,15 +42,7 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
-}
-
-.logo{
-    color: var(--color-white);
-    font-size: 30px;
-}
-
-.logo span{
-    color: var(--color-primary);
+    position: fixed;
 }
 
 .menu_bar ul{
@@ -132,14 +121,22 @@ input{
     font-size:16px;
     border-radius: 1px;
 }
-.antes-centro{
-    background-color: var(--colorr-black1);
-}
-.centro img{
+
+.img img{
     width:100%;
-    height: 92vh;
+    height: 100vh;
+    background-color: var(--colorr-black1);
 
 }
+
+/*Evento*/
+.evento{
+    width:100%;
+    height: 92vh;
+}
+
+
+/*    rodape    */
 footer{
     padding: 25px;
     background-color:black;
