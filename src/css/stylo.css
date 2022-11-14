@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+:root{
+    --color-primary: #c9fd3b;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --colorr-black1: #212b38;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+a{
+    font-family: 'Anek Latin', sans-serif;
+}
+
+.game{
+    text-decoration: none;
+    color: #62ad0b;
+    margin-left: 70px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.branco{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.menu_bar{
+    background-color: var(--color-black);
+    height:100px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12%;
+    position: fixed;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li{
+    padding: 10px 30px;
+    position: relative; 
+}
+
+.menu_bar ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0,3s;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.menu_bar ul li a:hover{
+    color:var(--color-primary);
+}
+
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:100%;
+    background-color:black;
+}
+
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .dropdown_menu ul li{
+width: 150px;
+padding: 10px;
+}
+
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top:3px ;
+}
+.dropdown_menu-1{
+    display: block;
+    position: absolute;
+    top:0;
+    left:150px;
+    background-color: var(--color-black);
+}
+button{
+    text-decoration: none;
+    outline:none;
+    border:none;
+    background:none;
+    padding: 12px 16px;
+    background: #62ad0b;
+    color:white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    transition:0.5s;
+    cursor:pointer;
+    font-family: 'Roboto', sans-serif;
+
+}
+button:hover{
+    background-color: #c9fd3b;
+    transform: scale(1.1);
+
+}
+
+input{
+    padding: 8px 50px;
+    font-size:16px;
+    border-radius: 1px;
+}
+#img-0{
+    background-image: url(../img/ex.png);
+}
+
+
+.home{
+    font-family: sans-serif;
+    height:100vh;
+    background-color: var(--colorr-black1);
+    padding: 0 10% 0px 10%;
+}
+
+.foto {
+    width:100%;
+    height: 100%;
+    background-color: var(--colorr-black1);
+    background-repeat: no-repeat;
+}
+
+/*Evento*/
+.evento{
+    width:100%;
+    height: 92vh;
+}
+
+
+/*    rodape    */
+footer{
+    padding: 35px;
+    background-color:black;
+
+}
+.text-footer{
+    font-size: medium;
+    color:whitesmoke;
+    text-align: center;
+    font-family: 'roboto';
+}
+.criadorSite{
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #62ad0b;
+    text-align: center;
+}
+
+.inscricao{
+    width:100%;
+    background-color: #141d28;
+}
+
+
+.insc{
+    padding-top:120px;
+    
+}
+.insc img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 45px;
+    padding-bottom: 80px;
+    display: block;
+    
+}
+
+.insc h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    color: #e9e9e9;
+}
+.insc h2{
+    text-align: center;
+    margin-bottom:25px;
+    margin-top: 15px;
+    font-family:'roboto';
+    font-size: 30px;
+    color: #ec38dd;
+}
+.insc p{
+    text-align: center;
+    color: #e9e9e9;
+    font-family: arial;
+    margin-top: 15px;
+}
+
+.insc button{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:45px;
+    margin-bottom: 70px;
+    margin-left:47vw;
+    margin-right:0%;
+}
+
+.regra{
+    width:100%;
+    background-color: aliceblue;
+}
+
+.regra h1{
+    padding-top:120px;
+    padding-bottom: 70px;
+    padding-left:20%;
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+}
+.regra h2{
+    padding-bottom: 20px;
+    padding-left: 20%;
+    font-family:'roboto';
+}
+.regra p{
+    padding-bottom: 50px;
+    padding-left: 20%;
+    color: grey;
+    font-family:'roboto';
+}
+.regra .pp{
+    padding-left: 20%;
+    padding-bottom: 15px;
+    color: grey;
+    font-family:'roboto';
+}
+.regra h3{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 22%;
+    padding-bottom: 100px;
+    color: black;
+    font-style: oblique;
+    font-family:'roboto';
+}
+.sobre{
+    width:100%;
+    background-color: aliceblue;
+    padding: 120px 0 60px ;
+ 
+}
+.sobre h1{
+    padding-left:20%;
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
+
+}
+
+.sobre p{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: gray;
+    font-family: 'roboto';
+}
+.sobre h2{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sorteio{
+    color: #62ad0b;
+}
+.sobre .p-sobre{
+    padding-left: 15%;
+}
+
+.jurado{
+    width:100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgba(255, 255, 255, 0.986);
+}
+
+.banner-jurado{
+    background-color: (255, 255, 255, 0.986);
+    min-height: 60vh;
+    margin: 0;
+
+}
+.jurado .banner-jurado h1{
+    padding-top:120px;
+    text-align: center;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jurado .banner-jurado h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    color: gray;
+}
+
+.jurado .card{
+    width:31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+    
+}
+.imagemProduto{
+    height:450px;
+    width: 100%;
+    margin-bottom:10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    border: 3px solid rgb(228, 231, 229);
+}
+
+.card p{
+    margin-bottom:30px;   
+}
+.card h3{
+    font-size: 25px;
+    text-align: center;
+    font-family:'roboto';
+}
+.card p{
+    font-size: 15px;
+    margin-top: 10px;
+    text-align:center;
+    font-family:'roboto';
+}
+
+#img-1{
+    background-image: url(https://educadordofuturo.com.br/wp-content/uploads/2020/04/ferramentas-para-professores.jpg);
+    
+}
+
+#img-2{
+    background-image: url(https://wl-incrivel.cf.tsp.li/resize/728x/jpg/0ec/140/d189845022bb6eddb88bb5279a.jpg);
+}
+
+#img-3{
+    background-image: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+/* PREMIOS -------------------*/
+
+.premio .esp{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color:#212b38;
+}
+
+
+
+.banner-premio{
+    background-color: var(--colorr-black1);
+    min-height: 60vh;
+    padding: 50px;
+
+}
+
+.cardPremio{
+    background-color: #e9e9e9;
+    width:31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+    border: 3px solid rgb(201, 199, 199);
+    border-radius: 5px;
+}
+.premio .cardPremio:hover{
+    border: 10px solid rgb(59, 202, 66);
+}
+
+.imagemPremio{
+    height:200px;
+    width: 215px;
+    background-size: cover;
+    margin-left:auto;
+    margin-right:auto;
+    background-position: center;
+}
+
+.imagemPremio .photo{
+    height:215px;
+    width: 200px;
+    background-size:cover;
+       
+}
+
+
+.premio h1{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    margin: 10%;
+    margin-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.premio h3{
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 20px;
+    padding-top: 10%;
+    font-family: 'Roboto', sans-serif;
+
+}
+.premio p{
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
+    font-family:'roboto';
+}
+.premio hr{
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#img-4{
+    background-image: url('../img/1lugar.png');
+}
+#img-5{
+    background-image: url('../img/2lugar.png');
+}
+#img-6{
+    background-image: url('../img/3lugar.png');
+}
+#img-7{
+    background-image: url('../img/4lugar.png');
+}
+#img-8{
+    background-image: url('../img/5lugar.png');
+}
